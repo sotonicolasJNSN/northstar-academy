@@ -53,6 +53,18 @@ const campusImages = [
 ];
 
 let currentImage = 0;
+let touchStartX = 0;
+let touchStartY = 0;
+
+function showPreviousImage() {
+  currentImage = (currentImage - 1 + campusImages.length) % campusImages.length;
+  renderCarousel();
+}
+
+function showNextImage() {
+  currentImage = (currentImage + 1) % campusImages.length;
+  renderCarousel();
+}
 
 function renderCarousel() {
   const image = campusImages[currentImage];
@@ -78,14 +90,32 @@ function renderCarousel() {
 }
 
 previousImage.addEventListener('click', () => {
-  currentImage = (currentImage - 1 + campusImages.length) % campusImages.length;
-  renderCarousel();
+  showPreviousImage();
 });
 
 nextImage.addEventListener('click', () => {
-  currentImage = (currentImage + 1) % campusImages.length;
-  renderCarousel();
+  showNextImage();
 });
+
+campusImage.addEventListener('touchstart', (event) => {
+  const [touch] = event.touches;
+  touchStartX = touch.clientX;
+  touchStartY = touch.clientY;
+}, { passive: true });
+
+campusImage.addEventListener('touchend', (event) => {
+  const [touch] = event.changedTouches;
+  const distanceX = touch.clientX - touchStartX;
+  const distanceY = touch.clientY - touchStartY;
+
+  if (Math.abs(distanceX) < 45 || Math.abs(distanceX) < Math.abs(distanceY)) return;
+
+  if (distanceX < 0) {
+    showNextImage();
+  } else {
+    showPreviousImage();
+  }
+}, { passive: true });
 
 renderCarousel();
 

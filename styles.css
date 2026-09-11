@@ -319,6 +319,7 @@ button {
   height: 600px;
   object-fit: cover;
   transition: opacity 0.25s ease;
+  touch-action: pan-y;
 }
 
 .carousel-control {
@@ -399,35 +400,6 @@ button {
 .image-badge strong {
   font-size: 1.2rem;
   letter-spacing: -0.04em;
-}
-
-.floating-panel {
-  position: absolute;
-  right: -18px;
-  bottom: 70px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 16px 18px;
-  box-shadow: 0 18px 34px rgba(17, 35, 62, 0.12);
-}
-
-.mini-label {
-  color: var(--muted);
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.floating-panel strong {
-  font-size: 1.3rem;
-}
-
-.floating-panel small {
-  color: var(--muted);
 }
 
 .feature-strip {
@@ -1010,11 +982,6 @@ textarea {
   .two-cols,
   .theme-grid {
     grid-template-columns: 1fr;
-  }
-
-  .floating-panel {
-    right: 18px;
-    bottom: 20px;
   }
 
   .panel-shell,
