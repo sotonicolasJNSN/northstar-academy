@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Plataforma de educación personalizada para estudiantes, docentes y familias. Descubre programas, recursos y apoyo académico con una experiencia moderna y clara."
+    />
+    <title>Northstar Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <div class="brand-wrap" aria-label="Northstar Academy home">
+            <div class="brand-mark">N</div>
+            <div class="brand-copy">
+              <span class="brand-name">Northstar</span>
+              <span class="brand-sub">Academy</span>
+            </div>
+          </div>
+
+          <nav class="main-nav" aria-label="Navegación principal">
+            <a href="#programas">Programas</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#apoyo">Apoyo</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+
+          <div class="header-contact" aria-label="Información de contacto">
+            <span class="contact-label">Admisiones 2026</span>
+            <a href="#contacto">Estamos para orientarte</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-main">
+        <section class="hero-section" aria-labelledby="hero-title">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">Educación con propósito</span>
+              <h1 id="hero-title">Diseñamos una experiencia académica más clara, humana y orientada al futuro.</h1>
+              <p class="lead">
+                Ayudamos a estudiantes, familias y equipos docentes a tomar decisiones más informadas con programas diseñados para crecer con confianza, rigor y acompañamiento real.
+              </p>
+
+              <div class="hero-metrics" aria-label="Indicadores clave">
+                <div>
+                  <strong>12+</strong>
+                  <span>programas</span>
+                </div>
+                <div>
+                  <strong>95%</strong>
+                  <span>retención</span>
+                </div>
+                <div>
+                  <strong>24/7</strong>
+                  <span>apoyo</span>
+                </div>
+              </div>
+
+              <div class="hero-actions">
+                <a class="primary-button" href="#experiencia">Completar solicitud</a>
+                <a class="secondary-button" href="#apoyo">Ver nuestro acompañamiento</a>
+              </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Campus universitario">
+              <div class="visual-card main-card" id="campusCarousel" aria-roledescription="carrusel" aria-label="Galería del campus">
+                <img
+                  id="campusImage"
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                  alt="Campus universitario con estudiantes y edificios modernos"
+                />
+                <div class="image-badge">
+                  <span id="imageLabel">Vida universitaria</span>
+                  <strong id="imageTitle">Aprender, crear y crecer</strong>
+                </div>
+                <button class="carousel-control previous" id="previousImage" type="button" aria-label="Imagen anterior">←</button>
+                <button class="carousel-control next" id="nextImage" type="button" aria-label="Siguiente imagen">→</button>
+                <div class="carousel-dots" id="carouselDots" aria-label="Seleccionar imagen"></div>
+              </div>
+              <div class="floating-panel">
+                <span class="mini-label">Próximo inicio</span>
+                <strong>Diciembre 2026</strong>
+                <small>Inscripciones abiertas</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-strip" id="programas">
+          <div class="container feature-grid">
+            <article class="feature-box">
+              <span class="feature-icon">🎓</span>
+              <div>
+                <h3>Formación integral</h3>
+                <p>Experiencias diseñadas para combinar conocimiento, creatividad y aplicación práctica.</p>
+              </div>
+            </article>
+            <article class="feature-box">
+              <span class="feature-icon">🤝</span>
+              <div>
+                <h3>Mentoría cercana</h3>
+                <p>Acompañamiento constante para orientar decisiones, proyectos y metas académicas.</p>
+              </div>
+            </article>
+            <article class="feature-box">
+              <span class="feature-icon">📈</span>
+              <div>
+                <h3>Resultados medibles</h3>
+                <p>Objetivos claros, seguimiento continuo y mejora basada en aprendizaje real.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="app-section" id="experiencia">
+          <div class="container focus-wrap">
+            <div class="section-heading">
+              <span class="eyebrow">Interés académico</span>
+              <h2>Cuéntanos qué te gustaría estudiar y cómo podemos ayudarte.</h2>
+            </div>
+
+            <div class="panel-shell">
+              <div class="panel-copy">
+                <div class="mini-header">
+                  <span class="status-dot"></span>
+                  <span>Solicitud de información</span>
+                </div>
+
+                <h3>Una experiencia pensada para personas reales.</h3>
+                <p>
+                  Esta información nos permite entender mejor tus intereses, perfil y objetivos para recomendarte la opción más adecuada, con un acompañamiento más personalizado desde el principio.
+                </p>
+
+                <ul class="benefit-list">
+                  <li>Revisión de intereses académicos y profesionales.</li>
+                  <li>Orientación para elegir el programa más alineado.</li>
+                  <li>Soporte y seguimiento desde la primera consulta.</li>
+                </ul>
+              </div>
+
+              <div class="form-panel">
+                <form id="surveyForm" novalidate>
+                  <div class="form-progress" aria-label="Progreso de la solicitud">
+                    <div class="progress-step active"><span>1</span><small>Perfil</small></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step active"><span>2</span><small>Intereses</small></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step active"><span>3</span><small>Preferencias</small></div>
+                  </div>
+                  <p class="form-note"><strong>Completa tu solicitud</strong> · Los campos marcados con * son necesarios.</p>
+                  <div class="form-grid two-cols">
+                    <label class="field">
+                      <span>Nombre completo <b>*</b></span>
+                      <input type="text" id="name" name="name" placeholder="Nombre y apellidos" aria-label="Nombre completo" required />
+                      <small class="input-hint">Necesario para identificar tu solicitud.</small>
+                    </label>
+
+                    <label class="field">
+                      <span>Correo institucional <b>*</b></span>
+                      <input type="email" id="email" name="email" placeholder="nombre@universidad.edu" aria-label="Correo institucional" required />
+                    </label>
+                  </div>
+
+                  <div class="form-grid two-cols">
+                    <label class="field">
+                      <span>Edad</span>
+                      <input type="number" id="age" name="age" min="16" max="100" placeholder="Ej. 20" aria-label="Edad" />
+                    </label>
+
+                    <label class="field">
+                      <span>Perfil académico</span>
+                      <select id="profile" name="profile" aria-label="Perfil académico">
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Docente">Docente</option>
+                        <option value="Investigador">Investigador</option>
+                        <option value="Padre o tutor">Padre o tutor</option>
+                        <option value="Administrativo">Administrativo</option>
+                        <option value="Otro">Otro</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <label class="field">
+                    <span>Ciudad o país de residencia</span>
+                    <input type="text" id="location" name="location" placeholder="Ej. Quito, Ecuador" aria-label="Ciudad o país de residencia" />
+                  </label>
+
+                  <div class="info-block">
+                    <h4>Áreas de interés</h4>
+                    <p>Selecciona la opción que mejor refleje tu motivación actual.</p>
+                  </div>
+
+                  <fieldset class="theme-group">
+                    <legend>Áreas de interés <b>*</b></legend>
+                    <div class="theme-grid" id="themeGrid">
+                      <button type="button" class="theme-card selected" data-theme="Tecnología educativa">
+                        <span class="theme-icon" aria-hidden="true">💻</span>
+                        <span>Tecnología educativa</span>
+                      </button>
+                      <button type="button" class="theme-card" data-theme="Aprendizaje colaborativo">
+                        <span class="theme-icon" aria-hidden="true">🤝</span>
+                        <span>Aprendizaje colaborativo</span>
+                      </button>
+                      <button type="button" class="theme-card" data-theme="Formación práctica">
+                        <span class="theme-icon" aria-hidden="true">🧪</span>
+                        <span>Formación práctica</span>
+                      </button>
+                      <button type="button" class="theme-card" data-theme="Pensamiento crítico">
+                        <span class="theme-icon" aria-hidden="true">🧠</span>
+                        <span>Pensamiento crítico</span>
+                      </button>
+                      <button type="button" class="theme-card" data-theme="Educación inclusiva">
+                        <span class="theme-icon" aria-hidden="true">♿</span>
+                        <span>Educación inclusiva</span>
+                      </button>
+                      <button type="button" class="theme-card" data-theme="Desarrollo personal">
+                        <span class="theme-icon" aria-hidden="true">🌱</span>
+                        <span>Desarrollo personal</span>
+                      </button>
+                    </div>
+                  </fieldset>
+
+                  <label class="field">
+                    <span>¿Qué te gustaría aprender o fortalecer? <b>*</b></span>
+                    <textarea id="goal" name="goal" rows="4" placeholder="Describe la necesidad, área o objetivo que te gustaría desarrollar..." aria-label="Objetivo" required></textarea>
+                  </label>
+
+                  <label class="field">
+                    <span>¿Qué te motivó a participar en esta propuesta? <b>*</b></span>
+                    <textarea id="reason" name="reason" rows="4" placeholder="Comparte tus motivaciones, expectativas o metas..." aria-label="Motivación" required></textarea>
+                  </label>
+
+                  <fieldset class="field radio-fieldset">
+                    <legend>Tipo de experiencia que prefieres</legend>
+                    <div class="options-row">
+                      <label class="radio-item">
+                        <input type="radio" name="contentType" value="Informativa" checked />
+                        <span>Informativa</span>
+                      </label>
+                      <label class="radio-item">
+                        <input type="radio" name="contentType" value="Interactiva" />
+                        <span>Interactiva</span>
+                      </label>
+                      <label class="radio-item">
+                        <input type="radio" name="contentType" value="Motivacional" />
+                        <span>Motivacional</span>
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <label class="checkbox-field">
+                    <input type="checkbox" id="accept" name="accept" />
+                    <span>Acepto que Northstar Academy use esta información para orientarme y mejorar la experiencia educativa. <b>*</b></span>
+                  </label>
+
+                  <button type="submit" class="submit-button">Enviar solicitud</button>
+                </form>
+
+                <div id="result" class="result hidden" aria-live="polite">
+                  <div class="result-header">
+                    <span id="resultIcon" class="success-icon">✓</span>
+                    <h3 id="resultTitle">Solicitud enviada</h3>
+                  </div>
+                  <p id="resultText"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="support-section" id="apoyo">
+          <div class="container support-grid">
+            <div class="support-card value-card">
+              <span class="eyebrow alt">Apoyo académico</span>
+              <h3>Una comunidad que acompaña cada etapa.</h3>
+              <p>Desde la orientación inicial hasta la vida universitaria, cada estudiante tiene un camino claro y cercano.</p>
+            </div>
+            <div class="support-card stat-card">
+              <div>
+                <strong>89%</strong>
+                <span>recomendación entre familias</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>satisfacción general</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="contacto">
+        <div class="container footer-inner">
+          <div>
+            <span class="footer-brand">Northstar Academy</span>
+            <p>Educación que crea oportunidades reales.</p>
+          </div>
+          <div class="footer-contact">
+            <a href="mailto:sotonicolas2004@gmail.com">sotonicolas2004@gmail.com</a>
+            <a href="tel:+593983773949">+593 98 377 3949</a>
+            <span>Av. República 456 · Quito, Ecuador</span>
+            <span>Lun - Vie · 08:00 - 17:00</span>
+          </div>
+          <div class="footer-links">
+            <span>Futuro</span>
+            <span>Aprendizaje</span>
+            <span>Calidad</span>
+            <span>Innovación</span>
+            <span>Inclusión</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
